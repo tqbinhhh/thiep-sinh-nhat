@@ -127,7 +127,7 @@ body {
     object-fit: contain;
     margin-bottom: 20px;
     animation: float 3s ease-in-out infinite;
-    background-color: white; /* Đảm bảo nền của thiệp là màu trắng */
+    background-color: white;
 }
 
 .invitation-text {
@@ -199,4 +199,42 @@ body {
 @keyframes pulse-overlay {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.02); }
+}
+
+/* --- Responsive cho màn hình nhỏ hơn 640px --- */
+@media (max-width: 640px) {
+    .invitation-container {
+        padding: 20px; /* Giảm padding */
+    }
+    .invitation-title-cover {
+        font-size: 2em; /* Giảm kích thước chữ tiêu đề */
+    }
+    .open-button {
+        padding: 12px 24px; /* Giảm padding nút */
+        font-size: 1.2em; /* Giảm kích thước chữ nút */
+    }
+    .open-button .heart-icon {
+        width: 25px; /* Giảm kích thước icon */
+        height: 25px;
+    }
+    .invitation-image {
+        width: 100px; /* Giảm kích thước hình ảnh */
+        height: 100px;
+    }
+    .host-name {
+        font-size: 1.8em; /* Giảm kích thước tên người mời */
+    }
+    .invitation-title {
+        font-size: 1.2em; /* Giảm kích thước tiêu đề mời */
+    }
+    .guest-name {
+        font-size: 2.2em; /* Giảm kích thước tên khách mời */
+    }
+    .message {
+        font-size: 1em; /* Giảm kích thước lời nhắn */
+    }
+    .details {
+        font-size: 0.9em; /* Giảm kích thước chi tiết */
+        padding-top: 15px; /* Giảm padding */
+    }
 }
